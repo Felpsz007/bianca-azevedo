@@ -78,10 +78,11 @@ a{color:#6F4E82}a:hover{color:#4A3A55}
 .ba-stepnum{font-family:'Lora',serif;font-style:italic;font-size:44px;line-height:1;transition:color .6s ease;color:#C8AED3}
 .ba-step.is-on .ba-stepnum{color:#DA73B8}
 @media (max-width: 760px), (max-height: 560px){.ba-step{background:#FFFFFF;opacity:1;transform:none;box-shadow:0 24px 50px -30px rgba(138,103,157,.55)}.ba-step .ba-stepnum{color:#DA73B8}}
+@media (min-width: 1441px){.ba-sticky{height:calc(100vh / var(--z, 1)) !important}}
 </style>
 </head>
 <body>
-<div style="font-family: 'Mulish', system-ui, sans-serif; color: #4A3A55; background: #FFFFFF; min-width: 0; overflow-x: clip">
+<div id="ba-root" style="font-family: 'Mulish', system-ui, sans-serif; color: #4A3A55; background: #FFFFFF; min-width: 0; overflow-x: clip">
 
 <!-- TOPO / MARCA -->
 <header class="ba-header" style="position: relative; z-index: 5; background: #FDF0F7">
@@ -519,6 +520,17 @@ Agendar minha sessão pelo WhatsApp</a>
 </a>
 
 </div>
+<script>
+(function(){
+  var root=document.getElementById('ba-root');
+  function fit(){
+    var z=Math.max(1, Math.min(2, window.innerWidth/1440));
+    document.documentElement.style.setProperty('--z', z);
+    root.style.zoom = z;
+  }
+  fit(); window.addEventListener('resize', fit);
+})();
+</script>
 <script>
 (function(){
   var sec=document.getElementById('como-agendar'), items=[].slice.call(document.querySelectorAll('.ba-step')),
