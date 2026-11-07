@@ -46,6 +46,7 @@ a{color:#6F4E82}a:hover{color:#4A3A55}
 .ba-track-dep{animation:ba-scroll-dep 90s linear infinite}
 @keyframes ba-scroll-dep{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .ba-mob{display:none}
+.ba-loclink:hover{color:#3E2F49 !important}
 li svg{flex:0 0 auto}
 .ba-faq summary::-webkit-details-marker{display:none}
 .ba-faq summary:hover{color:#8A679D}
@@ -55,6 +56,7 @@ li svg{flex:0 0 auto}
 @media (max-width: 1100px){.ba-wave{display:none}}
 @media (max-width: 760px){
 .ba-desk{display:none !important}
+.ba-loc{padding:28px 24px !important}
 .ba-mhide{display:none !important}
 .ba-sinal{padding:14px 16px !important;font-size:15px !important;border-radius:14px !important}
 .ba-tema{padding:16px 0 !important;align-items:center}
@@ -477,19 +479,25 @@ Agendar minha sessão pelo WhatsApp</a>
 
 <!-- LOCALIZAÇÃO -->
 <section class="ba-sec" style="padding: 96px 32px; background: #FDF0F7">
-<div style="max-width: 1120px; margin: 0 auto">
-<div style="display: flex; flex-direction: column; justify-content: center; gap: 20px">
+<div style="max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-direction: column; gap: 16px">
 <p style="margin: 0; font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.32em; color: #6F4E82">ONDE ATENDO</p>
-<h2 style="margin: 0; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; color: #3E2F49">Consultório em <em style="font-family: 'Lora', serif; font-weight: 500; color: #8A679D">Sarandi/PR.</em></h2>
-<div style="display: flex; align-items: flex-start; gap: 14px">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A679D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A3A55"><strong>Empresarial Amieiro</strong><br>Rua Guiapó, 214 · 1º andar, sala 04<br>Centro, Sarandi - PR</p>
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; color: #3E2F49">Presencial ou Online, <em style="font-family: 'Lora', serif; font-weight: 500; color: #8A679D">como for melhor para você.</em></h2>
 </div>
-<div style="padding-top: 4px">
-<a href="https://maps.app.goo.gl/f8x3Dbh4LtCfwrvV6" target="_blank" rel="noopener" class="ba-btn ba-full" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 999px; background: #8A679D; color: #FFFFFF; font-size: 16px; font-weight: 800; text-decoration: none">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
-Ver localização</a>
-</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch">
+<article class="ba-loc" style="flex: 1 1 320px; min-width: 0; box-sizing: border-box; padding: 40px 36px; border-radius: 24px; display: flex; flex-direction: column; gap: 18px; background: #FFFFFF; border: 1px solid #E7CFE2">
+<span style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.2em; color: #8A679D">01</span>
+<h3 style="margin: 0 0 4px; font-family: 'Lora', serif; font-weight: 500; font-size: clamp(28px, 3vw, 38px); line-height: 1.15; color: #3E2F49">Presencial em Sarandi</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #5C4A68">Sessões individuais em um consultório reservado e acolhedor no Empresarial Amieiro, no centro de Sarandi.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #4A3A55">Rua Guiapó, 214 · 1º andar, sala 04<br>Centro · Sarandi - PR</p>
+<a href="https://maps.app.goo.gl/f8x3Dbh4LtCfwrvV6" target="_blank" rel="noopener" class="ba-loclink" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: auto; padding-top: 8px; font-size: 16px; font-weight: 800; color: #6F4E82; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px">Ver localização <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</article>
+<article class="ba-loc" style="flex: 1 1 320px; min-width: 0; box-sizing: border-box; padding: 40px 36px; border-radius: 24px; display: flex; flex-direction: column; gap: 18px; background: #FFFFFF; border: 1px solid #E7CFE2">
+<span style="font-family: 'Raleway', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.2em; color: #8A679D">02</span>
+<h3 style="margin: 0 0 4px; font-family: 'Lora', serif; font-weight: 500; font-size: clamp(28px, 3vw, 38px); line-height: 1.15; color: #3E2F49">Atendimento Online</h3>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #5C4A68">Sessões por videochamada para quem busca mais flexibilidade ou mora em outra cidade, com o mesmo cuidado ético e o mesmo sigilo do atendimento presencial.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #6F4E82">Para a sessão, você vai precisar de um lugar reservado, internet estável e um celular ou computador com câmera e áudio.</p>
+</article>
 </div>
 </div>
 </section>
